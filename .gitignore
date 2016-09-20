@@ -15,3 +15,9 @@ project.xcworkspace
 xcuserdata
 .arcbuildbootstrap
 TestAppIdAndSecret.xcconfig
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
