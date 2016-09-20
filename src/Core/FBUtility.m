@@ -27,7 +27,7 @@
 #import "FBDynamicFrameworkLoader.h"
 #import "FBSettings+Internal.h"
 
-#import <AdSupport/AdSupport.h>
+//#import <AdSupport/AdSupport.h>
 #include <mach-o/dyld.h>
 #include <sys/time.h>
 
@@ -374,11 +374,13 @@ NSString *const FBPersistedAnonymousIDKey   = @"anon_id";
     
     NSString *result = nil;
     
+    /*
     Class ASIdentifierManagerClass = fbdfl_ASIdentifierManagerClass();
     if ([ASIdentifierManagerClass class]) {
         ASIdentifierManager *manager = [ASIdentifierManagerClass sharedManager];
         result = [[manager advertisingIdentifier] UUIDString];
     }
+    */
     
     return result;
 }
