@@ -434,6 +434,8 @@ NSString *const FBPersistedAnonymousIDKey   = @"anon_id";
 
 
 + (FBAdvertisingTrackingStatus)advertisingTrackingStatus {
+    return AdvertisingTrackingDisallowed;
+    /*
     if ([FBSettings restrictedTreatment] == FBRestrictedTreatmentYES) {
         return AdvertisingTrackingDisallowed;
     }
@@ -453,6 +455,7 @@ NSString *const FBPersistedAnonymousIDKey   = @"anon_id";
     });
 
     return status;
+    */
 }
 
 + (NSMutableDictionary<FBGraphObject> *)activityParametersDictionaryForEvent:(NSString *)eventCategory
